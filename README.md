@@ -99,15 +99,12 @@ Este proyecto es ideal para:
 
 ---
 
-## 📝 Licencia
-
-Este proyecto es de código abierto y está disponible bajo la licencia MIT. Siéntete libre de usarlo, modificarlo y distribuirlo para fines educativos.
-
 ## 🤝 Contribuciones
 
 Las contribuciones son bienvenidas. Si tienes ideas para mejorar el proyecto o encuentras algún bug, no dudes en:
 - Abrir un issue
 - Enviar un pull request
 - Contactarme en mis redes sociales
+
 
 ¡Gracias por tu interés en aprender programación! ☕💻
