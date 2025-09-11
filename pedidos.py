@@ -19,7 +19,7 @@ def pedir_cafe():
 
     if opcion in cafes:
         cafe_elegido = cafes[opcion]
-    print("Has pedido un " + cafe_elegido + ". ¡Preparando tu café! ☕")
+        print("Has pedido un " + cafe_elegido + ". ¡Preparando tu café! ☕")
 
         # ---------------- ESCRITURA DE ARCHIVOS ----------------
         # Usamos el modo "a" (append) que significa "agregar".
