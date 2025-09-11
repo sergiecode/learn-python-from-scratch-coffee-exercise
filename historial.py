@@ -9,10 +9,9 @@ ARCHIVO_PEDIDOS = "pedidos_cafe.txt"
 
 
 def ver_historial():
-    # Primero comprobamos si el archivo existe para evitar errores
-    if os.path.exists(ARCHIVO_PEDIDOS):
+    # Intentamos abrir el archivo y manejamos el error si no existe
+    try:
         print("\n📜 Historial de pedidos:")
-
         # ---------------- LECTURA DE ARCHIVOS ----------------
         # Usamos el modo "r" (read) que significa "solo lectura".
         # El método readlines() devuelve una lista donde cada
@@ -24,8 +23,8 @@ def ver_historial():
                 # y el contenido (el café pedido).
                 for i, pedido in enumerate(pedidos, start=1):
                     # strip() elimina el salto de línea "\n"
-                    print(f"{i}. {pedido.strip()}")
+                    print(str(i) + ". " + pedido.strip())
             else:
                 print("No hay pedidos registrados todavía.")
-    else:
+    except FileNotFoundError:
         print("\nTodavía no existe un historial de pedidos.")
